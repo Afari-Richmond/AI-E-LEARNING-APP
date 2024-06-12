@@ -4,7 +4,7 @@ import { Button } from "@/components/ui/button"
 
 const page = () => {
   return (
-    <> <div>page</div>
+    <> 
     <Button variant="destructive">Button</Button>
     </>
 
