@@ -1,9 +1,27 @@
 import React from 'react'
+import WelcomeBanner from './_components/WelcomeBanner '
+import CourseList from './_components/CourseList'
 
-const courses = () => {
+
+const Page = () => {
   return (
-    <div>courses</div>
+    <div className='grid grid-cols-1 md:grid-cols-3 p-5'>
+
+      <div className='col-span-2'>
+      <WelcomeBanner />
+   <CourseList />
+     
+
+      </div>
+      
+      <div>
+       right section
+      </div>
+
+
+
+    </div>
   )
 }
 
-export default courses
+export default Page
