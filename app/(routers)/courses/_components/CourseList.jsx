@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import {
     Select,
     SelectContent,
@@ -6,12 +6,30 @@ import {
     SelectTrigger,
     SelectValue,
   } from "@/components/ui/select"
+import GlobalApi from '@/app/_utils/GlobalApi'
   
   
 
 
 
 const CourseList = () => {
+  useEffect(()=>{
+    getAllCourses();
+
+  } ,[])
+
+
+
+  const getAllCourses=()=>{
+    GlobalApi.getAllCourseList().then(resp=>{
+      console.log(resp);
+    })
+  }
+
+
+
+
+
   return (
   
       <div className='p-5 bg-white rounded-lg mt-3'>
