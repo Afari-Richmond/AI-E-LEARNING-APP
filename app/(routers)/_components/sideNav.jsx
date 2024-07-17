@@ -17,7 +17,7 @@ const SideNav = () => {
         },
         {
             id: 3,
-            name: 'Be Instructor',
+            name: 'Take Quiz',
             icon: GraduationCap
         }
     ]
